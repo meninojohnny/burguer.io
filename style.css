@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+.app-bar {
+    height: 60px;
+    background-color: orange;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.app-logo {
+    flex: 2;
+    text-align: center;
+}
+
+.app-bar img {
+    width: 35px;
+}
+
+main {
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.items-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-card {
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+}
+
+.item-card .item-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.item-card .card-content {
+    position: relative;
+    padding: 10px;
+}
+
+.item-card .card-content a {
+    text-decoration: none;
+}
+
+.item-card .card-content h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.item-card .card-content .item-price {
+    font-size: 20px;
+}
+
+.item-card .card-content .less-price {
+    font-size: 14px;
+}
+
+.item-raiting {
+    color: gold;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.item-card .card-content .item-option {
+    display: flex;
+}
+
+.option-detail {
+    flex: 2;
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 20px;
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.icon-option {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    padding: 10px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+/* Details page */
+.header-details {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-details img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.header-details .option-details {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header-details .option-details .right-option {
+    display: flex;
+}
+
+.header-details .option-details a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-details {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+    position: absolute;
+    top: 230px;
+}
+
+.main-details .item-raiting p {
+    color: #33333392;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.info-details .description-details {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.info-details .galery-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.info-details .galery-details .galery-image {
+    flex: 1;
+    margin: 5px;
+}
+
+.info-details .galery-details .galery-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
+}
+
+.info-details .buy-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-details .buy-item .price-item {
+    font-size: 18px;
+}
+
+.info-details .buy-item .option-detail {
+    background-color: orange;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+
+
