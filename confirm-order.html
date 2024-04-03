@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burguer Io</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="app-bar">
+        <a href="index.html">
+            <i class='bx bx-home-alt'></i>
+        </a>
+        <div class="app-logo">
+            <img src="assets/images/burguer-logo.png" alt="">
+        </div>
+        <i class='bx bx-cart'></i>
+    </header>
+
+    <main class="home-confirm">
+
+        <h1>Confirme seu pedido</h1>
+
+        <section>
+
+
+            <div class="order-items">
+
+                <div class="order-card">
+
+                    <div class="card-image">
+                        <img class="item-image" src="" alt="">
+                    </div>
+
+                    <div class="card-details">
+
+                        <h2 class="item-name"></h2>
+
+                        <h3 class="item-price"></h3>
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#" class="button-confirm"> <i class='bx bxl-whatsapp'></i> Fazer Pedido</a>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+
+        const itemName = urlParams.get("name");
+        const itemPrice = urlParams.get("price");
+        const itemImage = urlParams.get("image");
+
+        const elementName = document.querySelector(".item-name");
+        const elementPrice = document.querySelector(".item-price");
+        const elementImage = document.querySelector(".item-image");
+        const buttonConfirm = document.querySelector(".button-confirm");
+
+        elementName.textContent = itemName;
+        elementPrice.textContent = "R$" + itemPrice;
+        elementImage.src = "assets/images/" + itemImage
+        buttonConfirm.href = "https://api.whatsapp.com/send?phone=558894428648&text=Quero%20fazer%20um%20pedido%20do%20item" + itemName;
+
+    </script>
+
+</body>
+
+</html>

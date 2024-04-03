@@ -13,7 +13,7 @@
 
     <header class="header-details">
 
-        <img src="assets/images/double-x.jpeg" alt="">
+        <img class="image-item" src="" alt="">
 
         <div class="option-details">
 
@@ -41,7 +41,7 @@
 
     <main class="main-details">
 
-        <h1>Double-X</h1>
+        <h1  class="name-item"></h1>
 
         <section class="
         info-details">
@@ -64,24 +64,56 @@
 
             <div class="galery-details">
 
-                <a class="galery-image" href="">
+                <a class="galery-image" href="#image01">
                     <img src="assets/images/double-x.jpeg" alt="">
                 </a>
 
-                <a class="galery-image" href="">
-                    <img src="assets/images/double-x.jpeg" alt="">
+                <a href="" class="lightbox" id="image01">
+                    <span style="background-image: url(assets/images/double-x.jpeg);">
+                        <p>Experimente o nosso Double-X</p>
+                    </span>
                 </a>
+
+                <a class="galery-image" href="#image02">
+                    <img src="assets/images/o-burguer-x.jpg" alt="">
+                </a>
+
+                <a href="" class="lightbox" id="image02">
+                    <span style="background-image: url(assets/images/o-burguer-x.jpg);">
+                        <p>Experimente o nosso Burguer-X</p>
+                    </span>
+                </a>      
                 
             </div>
 
             <div class="buy-item">
-                <p class="price-item">R$ 12.90</p>
-                <a href="item-detail.html" class="option-detail">Comprar Item</a>
+                <p class="price-item"></p>
+                <a class="option-detail">Comprar Item</a>
             </div>
 
         </section>
 
     </main>
+
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+
+        const itemName = urlParams.get("name");
+        const itemPrice = urlParams.get("price");
+        const itemImage = urlParams.get("image");
+
+        const imageDetail = document.querySelector(".image-item");
+        const nameDetail = document.querySelector(".name-item");
+        const priceDetail = document.querySelector(".price-item");
+        const optionDetail = document.querySelector(".option-detail");
+
+        imageDetail.src = "assets/images/" + itemImage;
+        nameDetail.textContent = itemName;
+        priceDetail.textContent = "R$ " + itemPrice;
+        optionDetail.href = "confirm-order.html?name=" + itemName + "&price=" + itemPrice + "&image=" + itemImage;
+
+    </script>
 
 </body>
 
