@@ -4,7 +4,7 @@ const items = [
     { "name": "X-Burguer", "price": "12.90", "image": "x-burguer.jpg" },
     { "name": "Double-X", "price": "15.90", "image": "double-x.jpeg" },
     { "name": "O Burguer-X", "price": "14.90", "image": "o-burguer-x.jpg" },
-    { "name": "X-Bacon", "price": "18.90", "image": "x-Bacon.jpg" },
+    { "name": "X-Bacon", "price": "18.90", "image": "x-bacon.jpg" },
     { "name": "X-Futuro", "price": "20.90", "image": "x-futuro.jpg" },
     { "name": "X-Salada", "price": "12.90", "image": "x-salada.jpg" },
 ];
